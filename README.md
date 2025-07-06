@@ -3,15 +3,15 @@
 Bu repo, **Yapay Zeka Akademisi** bünyesinde hazırladığım bitirme projesinin Jupyter Notebook çalışmasını içerir. Çalışmanın amacı, *UCI Heart Disease* veri setini kullanarak bireylerin kalp hastalığı riski taşıyıp taşımadığını makine öğrenimi algoritmalarıyla tahmin etmek ve en yüksek doğruluk–hata dengesini sağlayan modeli belirlemektir.
 
 ## İçerik
-| Klasör / Dosya | Açıklama |
-| -------------- | -------- |
+| Klasör / Dosya                                       | Açıklama                     |
+| --------------------------------------------------- | ---------------------------- |
 | `elif_karadeniz_yapay_zeka_akademisi_bitirme_projesi.ipynb` | Projenin ana Jupyter Notebook'u |
-| `data/` | Ham ve işlenmiş veri dosyaları (`heart.csv` vs.) |
-| `figures/` | EDA ve model sonuçlarına ait grafikler |
-| `requirements.txt` | Gerekli Python kütüphaneleri |
+| `Akademi_Bitirme_Projesi_Özeti.pdf`                 | Projenin genel özeti          |
+| `requirements.txt`                                  | Gerekli Python kütüphaneleri |
+
 
 ## Kullanılan Yöntem ve Teknolojiler
-- **Python 3.10**
+- **Python**
 - **Pandas, NumPy, Matplotlib, Seaborn** – Veri işleme & görselleştirme  
 - **Scikit‑learn** – Modelleme ve metrikler  
 - **CatBoost, XGBoost** – Gradient boosting tabanlı algoritmalar  
@@ -34,23 +34,31 @@ Bu repo, **Yapay Zeka Akademisi** bünyesinde hazırladığım bitirme projesini
 | **Random Forest** | 0.920 | 0.8478 | ca, thal, oldpeak |
 | **SVM (RBF)** | 0.918 | 0.8424 | - |
 
-> En yüksek ROC‑AUC skorunu elde eden **CatBoost**, sadece genel doğrulukta değil, aynı zamanda kritik yanlış negatifleri en aza indirerek sağlık alanındaki uygulamalar için güçlü bir aday olduğunu kanıtladı ve bu sayede klinik karar destek sistemlerine entegre edilerek erken teşhis süreçlerine katkı sağlayabilir.
+> En yüksek ROC‑AUC skorunu elde eden **Random Forest ve CatBoost**, sadece genel doğrulukta değil, aynı zamanda kritik yanlış negatifleri en aza indirerek sağlık alanındaki uygulamalar için güçlü bir aday olduğunu kanıtladı ve bu sayede klinik karar destek sistemlerine entegre edilerek erken teşhis süreçlerine katkı sağlayabilirler.
 
 ## Bulgular ve Değerlendirme
 
 - **Veri Analizi Bulguları:**  
   - `ca` ve `thal` değişkenlerinde yüksek oranda eksik veri tespit edildi. Bu eksiklikler uygun stratejilerle giderildi.  
-  - Kalp hastalığı ile en güçlü ilişkili değişkenler arasında `cp`, `thalach`, `oldpeak` ve `ca` yer aldı.  
+  - Kalp hastalığı ile en güçlü ilişkili değişkenler arasında `age`, `thalch`, `oldpeak` ve `ca` yer aldı.  
   - Kategorik değişkenlerin dağılımları incelenerek hedef değişkenle olan ilişkileri ortaya kondu.
 
 - **Model Performans Değerlendirmesi:**  
-  - CatBoost modeli, hem doğruluk oranı (%85) hem de ROC-AUC (0.92) ile en iyi sonuçları verdi.  
-  - Random Forest modeli benzer doğruluk oranı sunsa da, CatBoost’un daha düşük yanlış negatif oranı sağlık açısından daha güvenli bulundu.  
-  - KNN ve Logistic Regression gibi bazı klasik modeller, dengesiz veri dağılımı nedeniyle daha düşük performans gösterdi.
+  - Random Forest modeli, en düşük yanlış negatif sayısı ile (FN=12) en yüksek recall değerine ulaşarak klinik uygulamalarda en güçlü aday olmuştur.
+  - CatBoost modeli ise genel doğruluk oranı (%85) ve ROC-AUC (0.92) açısından öne çıkmış, ayrıca düşük yanlış pozitif oranıyla dikkat çekmiştir.
+  - KNN ve Logistic Regression gibi bazı klasik modeller, dengesiz veri dağılımı nedeniyle daha düşük performans göstermiştir.
 
 - **Klinik Uygulama Açısından:**  
-  - Yanlış negatiflerin minimize edilmesi önceliklendirildi çünkü yanlış negatif bir tahmin, hasta bireyin risksiz kabul edilmesi anlamına gelmekte.  
-  - Bu nedenle ROC-AUC ve recall değerleri, genel doğruluktan daha önemli metrikler olarak ele alındı.
+ 
+  - Kalp krizi gibi hayati risk taşıyan durumlarda, yanlış negatiflerin (FN) en aza indirilmesi büyük önem taşımaktadır.
+
+Bu nedenle tercih sıralaması şu şekildedir:
+
+- En iyi tercih: Random Forest modeli; en düşük yanlış negatif oranı ve en yüksek recall değerine sahiptir.
+
+- Alternatif tercih: CatBoost modeli; Random Forest'tan sonra en düşük yanlış negatif sayısına (FN=17) sahiptir ve aynı zamanda daha az yanlış pozitif üretmektedir.
+
+
 
 ---
 
