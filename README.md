@@ -61,8 +61,8 @@ Bu repo, **Yapay Zeka Akademisi** bünyesinde hazırladığım bitirme projesini
 
 ![Model Performans: Accuracy ve ROC-AUC](performance.png)
 
-- Random Forest modeli, en düşük yanlış negatif sayısı ile (FN=12) en yüksek recall değerine ulaşarak klinik uygulamalarda en güçlü aday olmuştur.  
-- CatBoost modeli ise genel doğruluk oranı (%85) ve ROC-AUC (0.92) açısından öne çıkmış, ayrıca düşük yanlış pozitif oranıyla dikkat çekmiştir.  
+- Random Forest modeli, en düşük yanlış negatif sayısı ile (FN=16) en yüksek recall değerine ulaşarak klinik uygulamalarda en güçlü aday olmuştur.  
+- CatBoost modeli ise genel doğruluk oranı (%8478) ve ROC-AUC (0.925) açısından öne çıkmış, ayrıca düşük yanlış pozitif oranıyla dikkat çekmiştir.  
 - KNN ve Logistic Regression gibi bazı klasik modeller, dengesiz veri dağılımı nedeniyle daha düşük performans göstermiştir.
 
 ### Klinik Uygulama Açısından
