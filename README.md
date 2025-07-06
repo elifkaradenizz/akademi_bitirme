@@ -43,7 +43,8 @@ Bu repo, **Yapay Zeka Akademisi** bünyesinde hazırladığım bitirme projesini
   - Kalp hastalığı ile en güçlü ilişkili değişkenler arasında `age`, `thalch`, `oldpeak` ve `ca` yer aldı.  
   - Kategorik değişkenlerin dağılımları incelenerek hedef değişkenle olan ilişkileri ortaya kondu.
 
-- **Model Performans Değerlendirmesi:**  
+- **Model Performans Değerlendirmesi:**
+  
   - Random Forest modeli, en düşük yanlış negatif sayısı ile (FN=12) en yüksek recall değerine ulaşarak klinik uygulamalarda en güçlü aday olmuştur.
   - CatBoost modeli ise genel doğruluk oranı (%85) ve ROC-AUC (0.92) açısından öne çıkmış, ayrıca düşük yanlış pozitif oranıyla dikkat çekmiştir.
   - KNN ve Logistic Regression gibi bazı klasik modeller, dengesiz veri dağılımı nedeniyle daha düşük performans göstermiştir.
@@ -63,3 +64,8 @@ Bu nedenle tercih sıralaması şu şekildedir:
 ---
 
 Proje, sağlık verileri üzerinde makine öğrenimi algoritmalarının etkili bir şekilde nasıl uygulanabileceğini göstermekte ve gerçek dünya senaryolarına entegre edilebilecek bir temel sunmaktadır.
+
+## Dataset Kaggle Linki
+
+[Dataset Kaggle Linki]([https://www.kaggle.com/code/elifkd/deep-learning](https://www.kaggle.com/datasets/redwankarimsony/heart-disease-data))
+
