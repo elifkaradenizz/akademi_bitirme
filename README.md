@@ -67,5 +67,5 @@ Proje, sağlık verileri üzerinde makine öğrenimi algoritmalarının etkili b
 
 ## Dataset Kaggle Linki
 
-[Dataset Kaggle Linki]([https://www.kaggle.com/code/elifkd/deep-learning](https://www.kaggle.com/datasets/redwankarimsony/heart-disease-data))
+[Dataset Kaggle Linki]([https://www.kaggle.com/code/elifkd/deep-learning](https://www.kaggle.com/datasets/redwankarimsony/heart-disease-data)
 
