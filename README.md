@@ -30,7 +30,7 @@ Bu repo, **Yapay Zeka Akademisi** bünyesinde hazırladığım bitirme projesini
 1. **Problem Tanımı & Veri Seti** – UCI Heart Disease veri setinin tanıtımı  
 2. **Keşifsel Veri Analizi (EDA)** – Eksik değer analizi, görselleştirmeler, hedef değişken dönüşümü  
 3. **Ön İşleme & Feature Engineering** – Eksik değer doldurma, kategorik kodlama, yeni değişken üretimi  
-4. **Model Eğitimi & Değerlendirme** – 6 farklı algoritma, 5-kat çapraz doğrulama  
+4. **Model Eğitimi & Değerlendirme** – 6 farklı algoritma
 5. **Sonuçların Karşılaştırılması** – ROC‑AUC, Accuracy, Precision-Recall, Confusion Matrix  
 6. **Modelin Pratik Kullanımı** – Yanlış negatiflerin azaltılması ve klinik senaryolara uygunluk  
 7. **Sonuç & Gelecek Çalışmalar** – Model geliştirme, veri genişletme ve API entegrasyonu önerileri  
