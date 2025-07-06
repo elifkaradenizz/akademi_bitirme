@@ -27,7 +27,7 @@ Bu repo, **Yapay Zeka Akademisi** bünyesinde hazırladığım bitirme projesini
 6. **Modelin Pratik Kullanımı** – Yanlış negatiflerin azaltılması ve klinik senaryolara uygunluk  
 7. **Sonuç & Gelecek Çalışmalar** – Model geliştirme, veri genişletme ve API entegrasyonu fikirleri
 
-## Öne Çıkan Sonuçlar 📊
+## Öne Çıkan Sonuçlar 
 | Model | ROC‑AUC | Accuracy | Öne Çıkan Özellik |
 | ----- | ------- | -------- | ----------------- |
 | **CatBoost** | 0.925 | 0.8478 | Age, cp, thalach |
