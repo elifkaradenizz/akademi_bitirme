@@ -8,8 +8,8 @@ Bu repo, **Yapay Zeka Akademisi** bünyesinde hazırladığım bitirme projesini
 
 | Klasör / Dosya                                       | Açıklama                        |
 | --------------------------------------------------- | ------------------------------ |
-| `elif_karadeniz_yapay_zeka_akademisi_bitirme_projesi.ipynb` | Projenin ana Jupyter Notebook'u |
-| `Akademi_Bitirme_Projesi_Özeti.pdf`                 | Projenin genel özeti            |
+| `elif_karadeniz_AI_academy_final_project.ipynb` | Projenin ana Jupyter Notebook'u |
+| `final_project_summary.pdf`                 | Projenin genel özeti            |
 | `requirements.txt`                                   | Gerekli Python kütüphaneleri   |
 
 ---
