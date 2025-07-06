@@ -1,4 +1,4 @@
-# Kalp Hastalığı Risk Tahmini – Bitirme Projesi 🎓🩺
+# Kalp Hastalığı Risk Tahmini – Bitirme Projesi 
 
 Bu repo, **Yapay Zeka Akademisi** bünyesinde hazırladığım bitirme projesinin Jupyter Notebook çalışmasını içerir. Çalışmanın amacı, *UCI Heart Disease* veri setini kullanarak bireylerin kalp hastalığı riski taşıyıp taşımadığını makine öğrenimi algoritmalarıyla tahmin etmek ve en yüksek doğruluk–hata dengesini sağlayan modeli belirlemektir.
 
