@@ -54,9 +54,9 @@ Bu repo, **Yapay Zeka Akademisi** bünyesinde hazırladığım bitirme projesini
 
 Bu nedenle tercih sıralaması şu şekildedir:
 
-- En iyi tercih: Random Forest modeli; en düşük yanlış negatif oranı ve en yüksek recall değerine sahiptir.
+  - En iyi tercih: Random Forest modeli; en düşük yanlış negatif oranı ve en yüksek recall değerine sahiptir.
 
-- Alternatif tercih: CatBoost modeli; Random Forest'tan sonra en düşük yanlış negatif sayısına (FN=17) sahiptir ve aynı zamanda daha az yanlış pozitif üretmektedir.
+  - Alternatif tercih: CatBoost modeli; Random Forest'tan sonra en düşük yanlış negatif sayısına (FN=17) sahiptir ve aynı zamanda daha az yanlış pozitif üretmektedir.
 
 
 
